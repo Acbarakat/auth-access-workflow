@@ -1,5 +1,5 @@
 # auth-access-workflow
-An example of using react-router to have authorized and special access pages.
+An example of using react-router to utilize authorization and acess-controlled pages.
 
 ## Sources
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
