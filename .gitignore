@@ -106,6 +106,8 @@ dist
 
 # dependencies
 /node_modules
+/bower_components
+/.vscode
 /.pnp
 .pnp.js
 
@@ -117,6 +119,15 @@ dist
 
 # misc
 .DS_Store
+.netbeans
+nbproject
+.idea
+.node_history
+.project
+.settings
+/reports
+.tmp
+
 .env.local
 .env.development.local
 .env.test.local

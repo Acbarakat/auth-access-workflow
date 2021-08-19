@@ -1,0 +1,127 @@
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #e9ecef 50%, #3c8dbc 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+.form-control {
+	padding-left: 3rem;
+}
+
+.form-group {
+	margin-bottom: 0px;
+}
+
+.form-group > svg {
+	bottom: 31px;
+    position: relative;
+    left: 15px;
+	color: #3c8dbc;
+}
+
+div.signin {
+    width: 91% !important;
+    margin-left: 16px !important;
+}
+
+div.login-box {
+	z-index: 100;
+}
+
+.login-box-body, .register-box-body {
+    padding: 20px;
+    border-top: 0;
+}
+
+.login-logo {
+  animation: color-change 8s infinite;
+}
+
+.login-logo b {
+	font-weight: 600;
+}
+
+@keyframes color-change  {
+  0% { color: white; }
+  50% { color: black; }
+  100% { color: white; }
+}
+
+div.signin .btn{
+  left: -12px;
+  width: 108%;
+}
+
+.cta {
+  color: white;
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  /*border-radius: 28px;*/
+  background: rgba(60, 141, 188, 0.85);
+  width: 45px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.cta span {
+  color: #3c8dbc;
+  position: relative;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  /*right: 145px;*/
+  color: white;
+  margin-left: 10px;
+  transform: translateX(-185px);
+  transition: all 0.3s ease;
+}
+.cta:hover, .cta:hover svg, .cta:hover span{
+  color: white;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #3c8dbc linear-gradient(180deg,#3c8dbc,#268fff) repeat-x!important;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
